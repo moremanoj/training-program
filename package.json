@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-user-service": "nodemon --watch src/users/* src/users/user-store.js --seneca.log=type:act",
+    "start-product-service": "nodemon --watch src/users/* src/products/product-store.js --seneca.log=type:act",
+    "start-core": "nodemon --inspect src/server.js --seneca.log=type:act",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "seneca": "^3.30.0",
+    "seneca-balance-client": "^1.2.0",
+    "seneca-basic": "^1.0.0",
+    "seneca-entity": "^22.0.0",
+    "seneca-mongo-store": "^5.0.1",
+    "seneca-redis-store": "^1.1.0",
+    "seneca-web": "^2.2.2",
+    "seneca-web-adapter-express": "^1.2.1"
+  }
+}
